@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" >الخبر</string>
+    <string name="Team">Elnagar Team</string>
+
+
+    <string name="signin" >تسجيل الدخول</string>
+    <string name="guest">الدخول كضيف</string>
+    <string name="register" >انشاء حساب</string>
+
+    <string name="name" >الاسم</string>
+    <string name="Email" >الإميل</string>
+    <string name="password">كلمة المرور</string>
+    <string name="repeat_password" >إعادة كلمة المرور</string>
+
+
+
+
+    <string name="have_an_account">تملك حساب</string>
+    <string name="sign_in_here">سجل دخول هنا</string>
+    <string name="connect_from">متصل من</string>
+    <string name="wrong">خطا</string>
+    <string name="no_internet">لا يوجد انترنت</string>
+    <string name="singinnow">تسجيل الدخول الان</string>
+    <string name="email_wrong">خطا بالاميل او الباسورد</string>
+    <string name="password_success">كلمةالمرور قصيره</string>
+    <string name="dont_match">غير متاشبه</string>
+
+    <string name="policy">سياسه</string>
+    <string name="economie">اقتصاد</string>
+    <string name="sport">رياضه</string>
+    <string name="urgent">عاجل</string>
+    <string name="home">الرئيسيه</string>
+
+    <string name="delete">مسح</string>
+    <string name="update">تعديل</string>
+    <string name="title">العنوان</string>
+    <string name="description">الموضوع</string>
+    <string name="load">تحميل</string>
+    <string name="Cancel">إلغاء</string>
+    <string name="Save">حفظ</string>
+    <string name="Updated">تم التعديل</string>
+    <string name="Deleted">تم المسح</string>
+    <string name="NUpdate">لم يتم التعديل</string>
+    <string name="ondowload">Downloading</string>
+    <string name="file_uploaded">File_Uploaded</string>
+    <string name="Sign_in_before">Sign in before</string>
+</resources>

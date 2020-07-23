@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name"> ُElkhabarُُ</string>
+    <string name="Team">Elnagar Team</string>
+
+    <string name="signin">Sign in</string>
+    <string name="guest">Guest</string>
+    <string name="register">Create account</string>
+
+    <string name="name" >Name</string>
+    <string name="Email">Email</string>
+    <string name="password">Password</string>
+    <string name="repeat_password" >Repeat Password</string>
+
+    <string name="require" translatable="false">require</string>
+
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+
+    <string name="all_rights_reserved_2020" translatable="false">All Right Recerved  2020</string>
+    <string name="enter_your_email_to_sign_in_to_your_account" translatable="false">Enter your email to sign in to your Account</string>
+    <string name="welcome" translatable="false">Welcome</string>
+    <string name="not_have_an_account" translatable="false">Don.t have an Account</string>
+    <string name="sign_up_here" translatable="false">Sign Up Here</string>
+    <string name="create_account" translatable="false">Create Account</string>
+    <string name="upload_your_profile_picture" translatable="false">Upload your profile photo</string>
+
+    <string name="have_an_account">Have an Account</string>
+    <string name="sign_in_here">Sign in here</string>
+    <string name="connect_from">Connected From</string>
+    <string name="wrong">Wrong</string>
+    <string name="no_internet">Wrong</string>
+    <string name="singinnow">Sign in now</string>
+    <string name="email_wrong">Email or password is wrong</string>
+    <string name="password_success">password is very short</string>
+    <string name="dont_match">dont_match</string>
+
+
+    <string name="Close" translatable="false">close</string>
+    <string name="Open" translatable="false">open</string>
+
+
+    <string name="policy">Policy</string>
+    <string name="economie">Economie</string>
+    <string name="sport">Sport</string>
+    <string name="urgent">Urgent</string>
+    <string name="home">Home</string>
+
+    <string name="title">title</string>
+    <string name="description">description</string>
+    <string name="load">load</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Save">Save</string>
+    <string name="Updated">Updated</string>
+    <string name="Deleted">Deleted</string>
+    <string name="NUpdate">Not Update</string>
+    <string name="ondowload">Downloading</string>
+    <string name="file_uploaded">File_Uploaded</string>
+    <string name="Sign_in_before">Sign in before</string>
+
+
+</resources>

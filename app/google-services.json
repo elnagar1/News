@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "1036434044218",
+    "firebase_url": "https://news-31c17.firebaseio.com",
+    "project_id": "news-31c17",
+    "storage_bucket": "news-31c17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036434044218:android:cf6453b39e306970988c03",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036434044218-ahhkog5rrc3pihc268hltgghignkaden.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGnEgPL7hv1VqY5lrffO5C5a4DcwrR1EE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036434044218-n92a21rlmkgk3omdv2fch4vjeg9k7nu8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036434044218:android:185d38989d9dc759988c03",
+        "android_client_info": {
+          "package_name": "com.example.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036434044218-kjbrinhn2sei9fnb5beemsn3eqfmg53b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.news",
+            "certificate_hash": "242ce5c5462001b47463eb83dab7f72097bad41b"
+          }
+        },
+        {
+          "client_id": "1036434044218-ii1pd4b7e7g6mqorjro0a1e2nle7rmd2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.news",
+            "certificate_hash": "73946d0c36fa1bc5be7cb47b75ad423f84ebaa9c"
+          }
+        },
+        {
+          "client_id": "1036434044218-ahhkog5rrc3pihc268hltgghignkaden.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGnEgPL7hv1VqY5lrffO5C5a4DcwrR1EE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036434044218-n92a21rlmkgk3omdv2fch4vjeg9k7nu8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

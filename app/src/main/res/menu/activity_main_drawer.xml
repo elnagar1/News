@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/Signout"
+            android:icon="@drawable/signout"
+            android:title="Signout" />
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/About"
+            android:icon="@drawable/about"
+            android:title="About" />
+    </group>
+
+</menu>

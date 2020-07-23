@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="153dp"
+        android:layout_marginBottom="153dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:weightSum="7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="107dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_icon"
+            android:paddingBottom="30dp"
+
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="25dp" />
+
+        <Button
+            android:id="@+id/Signin"
+            style="@style/text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_shape"
+            android:elevation="5dp"
+            android:fontFamily="@font/a"
+            android:text="@string/signin"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@color/colorBack"
+            android:translationZ="5dp" />
+
+        <Button
+            android:id="@+id/Register"
+            style="@style/text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_shape"
+            android:elevation="5dp"
+            android:fontFamily="@font/a"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@color/colorBack"
+            android:translationZ="5dp" />
+
+        <Button
+            android:id="@+id/Guest"
+            style="@style/text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_shape"
+            android:elevation="5dp"
+            android:fontFamily="@font/a"
+            android:text="@string/guest"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@color/colorBack"
+            android:translationZ="5dp" />
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/a"
+            android:text="@string/Team"
+            android:textColor="@color/colorBack"
+            android:textSize="10dp" />
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/a"
+            android:text="@string/all_rights_reserved_2020"
+            android:textColor="@color/colorBack"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
