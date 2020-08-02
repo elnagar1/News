@@ -3,6 +3,7 @@ package com.example.news.utils;
 import android.app.Dialog;
 import android.content.Context;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -14,9 +15,6 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by fairuz on 20/04/17.
- */
 
 public class Utils {
     public  static  int[] covers = new int[]{
@@ -33,15 +31,15 @@ public class Utils {
     public static String Json_NewsRoot = "articles";
     public static String Json_author = "author";
     public static String Json_title = "title";
-    public static String Json_description = "description";
-    public static String Json_imgUrl = "urlToImage";
     public static String Json_fullNewUrl= "url";
-    public static String Json_publishDate="publishedAt";
     public static String id="_id";
     private static List<SeModel> albumList=new ArrayList<>();
 
     public static List<SeModel> albumList() {
+if (!albumList.isEmpty()){
+    return albumList;
 
+} else {
         albumList.add(new SeModel(covers[0], "GoogleNews", "business"));
         albumList.add(new SeModel(covers[1], "GoogleNews", "entertainment"));
         albumList.add(new SeModel(covers[2], "GoogleNews", "health"));
@@ -49,7 +47,10 @@ public class Utils {
         albumList.add(new SeModel(covers[4], "GoogleNews", "sport"));
         albumList.add(new SeModel(covers[5], "GoogleNews", "technology"));
         albumList.add(new SeModel(covers[6], "GoogleNews", "science"));
+
         return albumList;
+
+}
     }
     public static boolean validateForm(Dialog dialog) {
         boolean valid = true;

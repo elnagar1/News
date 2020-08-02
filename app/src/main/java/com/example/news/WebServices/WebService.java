@@ -2,8 +2,10 @@ package com.example.news.WebServices;
 
 import com.example.news.Models.NewsModel;
 
+import io.reactivex.Observable;
 import retrofit2.Call;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class WebService {
@@ -16,8 +18,10 @@ public class WebService {
 
     Retrofit retrofit = new Retrofit.Builder()
             .baseUrl(BaseUrl)
+            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
-         .build();
+            .build();
+
     api = retrofit.create(Api.class);
 
 
@@ -33,7 +37,7 @@ public class WebService {
         return INSTANCE;
     }
 
-    public static Call<NewsModel> getPO(String category) {
+    public static Observable<NewsModel> getPO(String category) {
         return api.getPosts("eg", category, "0e52b6c2d0c64244b6e608a3a7b036ad");
     }
 

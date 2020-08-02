@@ -2,6 +2,7 @@ package com.example.news.ui.main;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,14 +20,15 @@ import com.nightonke.boommenu.BoomButtons.SimpleCircleButton;
 import com.nightonke.boommenu.BoomMenuButton;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private List<SeModel> albumList;
     private Toolbar toolbar;
-
-
+    private  static int Number = 0;
+    private MainAdapter mainAdapter ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +39,14 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        recyclerView = findViewById(R.id.recycler_view);
+
   //      initCollapsingToolbar();
 
 
         prepareAlbums();
         prepareRecycler();
+
 
 
 
@@ -92,16 +97,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void prepareRecycler() {
 
-        recyclerView = findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager( new GridLayoutManager(this, 2));
-        recyclerView.setAdapter(new MainAdapter(albumList, this));
+            mainAdapter = new MainAdapter(albumList, this);
+            recyclerView.setLayoutManager( new GridLayoutManager(this, 2));
+            recyclerView.setAdapter(mainAdapter);
+
 
     }
 
     private void prepareAlbums() {
-  if(albumList==null){
+
         albumList=Utils.albumList();
-  }
+
     }
 
     @Override

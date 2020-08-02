@@ -8,6 +8,12 @@ import androidx.lifecycle.ViewModel;
 import com.example.news.Models.NewsModel;
 import com.example.news.WebServices.WebService;
 
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.plugins.RxJavaPlugins;
+import io.reactivex.schedulers.Schedulers;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -20,26 +26,11 @@ public class MainActivityViewModel extends ViewModel {
 
     public void getNews(String category) {
 
-            WebService.getInstance().getPO(category).enqueue(new Callback<NewsModel>() {
-                @Override
-                public void onResponse(Call<NewsModel> call, Response<NewsModel> response) {
-                    mutableLiveData.setValue(response.body());
-                }
-
-                @Override
-                public void onFailure(Call<NewsModel> call, Throwable t) {
-                    Log.e("XXViewModel", t.getCause().getMessage());
-                }
-            });
-
-      /*    Observable observable = WebService.getInstance().getPO(category)
+         Observable observable = WebService.getInstance().getPO(category)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
        observable.subscribe(o ->  mutableLiveData.setValue((NewsModel) o));
 
-        RxJavaPlugins.setErrorHandler(e -> {
-            Log.e("XXViewModelhandler", "onError: " + e.getMessage());
-        });
 
 
         Observer<NewsModel> observer = new Observer<NewsModel>() {
@@ -68,9 +59,7 @@ public class MainActivityViewModel extends ViewModel {
         };
 
         observable.subscribe(observer);
-*/
+
         }
-
-
     }
 

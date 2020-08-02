@@ -2,21 +2,19 @@ package com.example.news.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.example.news.Models.SeModel;
 import com.example.news.R;
 import com.example.news.ui.main.HimitActivity;
 import com.example.news.ui.main.NewsActivity;
-
 import java.util.List;
 
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ma> {
@@ -25,8 +23,10 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ma> {
     Context context;
 
     public MainAdapter(List<SeModel> list, Context context) {
+
         this.list = list;
         this.context = context;
+
     }
 
 
@@ -41,7 +41,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ma> {
     @Override
     public void onBindViewHolder(@NonNull final ma holder, int position) {
         SeModel seModel = list.get(position);
-        holder.title.setText(seModel.getCategory());
+        holder.title.setText(seModel.getCategory().toUpperCase());
         holder.count.setText(seModel.getName());
 
         // loading album cover using Glide library
@@ -62,7 +62,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ma> {
 public class ma extends RecyclerView.ViewHolder {
 
     public TextView title, count;
-    public ImageView thumbnail, overflow;
+    public ImageView thumbnail;
 
     public ma(View view) {
         super(view);
